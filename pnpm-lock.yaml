@@ -47,6 +47,9 @@ importers:
       helmet:
         specifier: ^8.1.0
         version: 8.1.0
+      nest-backend:
+        specifier: 'link:'
+        version: 'link:'
       passport-jwt:
         specifier: ^4.0.1
         version: 4.0.1

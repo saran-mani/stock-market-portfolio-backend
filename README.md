@@ -10,7 +10,7 @@ This is the backend API for the stock portfolio tracker. It provides endpoints t
 - Swagger (for API docs)
 
 ```bash
-pnpm add
+pnpm add .
 ```
 
 2. **Start the API server**
@@ -20,4 +20,4 @@ pnpm run start:dev
 ```
 
 2. **Swagger API Documentation**
-http://localhost:3000/docs // update the url as per youre port
+http://localhost:8080/docs // update the url as per youre port
