@@ -7,8 +7,10 @@ export class GoogleFinanceService implements OnModuleDestroy {
 
   private async initBrowser(): Promise<void> {
     if (!this.browser) {
+      const executablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
       this.browser = await puppeteer.launch({
         headless: true, // headless improves speed
+        executablePath,
         args: ['--no-sandbox', '--disable-setuid-sandbox'],
       });
     }
