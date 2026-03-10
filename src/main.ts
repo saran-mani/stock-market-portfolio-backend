@@ -14,7 +14,9 @@ async function bootstrap() {
       stopAtFirstError: true,
     }),
   );
-  app.enableCors();
+  app.enableCors({
+    origin: 'https://octobyte.saranmani.dev',
+  });
   app.use(helmet());
 
   const config = new DocumentBuilder()
