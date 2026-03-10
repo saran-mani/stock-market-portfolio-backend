@@ -15,7 +15,7 @@ async function bootstrap() {
     }),
   );
   app.enableCors({
-    origin: 'https://octobyte.saranmani.dev',
+    origin: 'https://octabyte.saranmani.dev',
   });
   app.use(helmet());
 
